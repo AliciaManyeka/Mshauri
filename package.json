@@ -1,0 +1,28 @@
+{
+  "name": "mathusi-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "@mui/material": "^6.1.9",
+    "@mui/styled-engine-sc": "^6.1.9",
+    "framer-motion": "^11.13.1",
+    "lucide-react": "^0.464.0",
+    "mailtrap": "^3.4.0",
+    "mongoose": "^8.8.3",
+    "nodemon": "^3.1.7",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^7.0.2",
+    "styled-components": "^6.1.13",
+    "zustand": "^5.0.1"
+  }
+}
