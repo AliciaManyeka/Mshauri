@@ -2,14 +2,14 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero.jsx";
 import HeroCard from "./components/HeroCard/HeroCard.jsx";
-import BgVideo from "./assets/earth-bg.mp4";
-import wave from "./assets/wave Gif.gif";
-import Rapidscat from "./components/Rapidscat/Rapidscat.jsx";
-import Satelite from "./components/Satelite/Satelite.jsx";
+import BgVideo from "./assets/VT1U.gif";
 import Footer from "./components/Footer/Footer.jsx";
-import Footer5 from "./components/Footer/Footer5.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import About from "./components/About/About.jsx";
+import TaskManagment from "./components/TaskManagment/TaskMangment.jsx";
+import InventoryTracking from "./components/InventoryTracking/InventoryTracking.jsx";
+import Contact from "./components/contact/Contact.jsx";
 
 const App = () => {
   React.useEffect(() => {
@@ -21,22 +21,25 @@ const App = () => {
   return (
     <div className="">
       <div className="h-[700px] relative">
-        <video
-          autoPlay
-          loop
-          muted
-          className="fixed right-0 top-0 h-[700px] w-full object-cover z-[-1]"
-        >
-          <source src={BgVideo} type="video/mp4" />
-        </video>
-        <Navbar />
-        <Hero />
+        <img
+          src={BgVideo}
+          alt="Background"
+          className="fixed right-0 top-0 h-full w-full object-cover z-[-1]"
+        />
+        <div className="absolute inset-0 bg-white bg-opacity-10 backdrop-blur-md z-10 h-full" />
+        <div className="relative z-20 flex flex-col items-center justify-center h-full">
+          <Navbar />
+          <Hero />
+        </div>
       </div>
-      <HeroCard />
-      <Rapidscat />
-      <Satelite />
-      {/* <Footer /> */}
-      <Footer5 />
+        <About/>
+      <div className="mt-4">
+        <HeroCard />
+      </div>
+      <TaskManagment/>
+      <InventoryTracking/>
+      <Contact/>
+    <Footer/>
     </div>
   );
 };

@@ -8,18 +8,15 @@ const Hero = () => {
         <div className="container grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="text-white space-y-4 lg:pr-36">
             <h1 data-aos="fade-up" className="text-5xl font-bold">
-              ORBIT THE EARTH
+              Unleash Your Bussiness' full potential
             </h1>
             <p data-aos="fade-up" data-aos-delay="300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ea
-              dolorem eius accusamus beatae. Nulla quis beatae quo, possimus
-              tempora similique dignissimos repellat aperiam veniam culpa
-              consequatur repudiandae asperiores saepe.
+            From innovative growth strategies to expert IT solutions, TD &amp; Partners is your partner in scaling new heights. Let’s transform your challenges into opportunities together.
             </p>
             <button
               data-aos="fade-up"
               data-aos-delay="500"
-              className="bg-blue-400 text-white hover:bg-blue-500 px-4 py-1 rounded-md duration-200"
+              className="bg-red-400 text-white hover:bg-blue-500 px-4 py-1 rounded-md duration-200"
             >
               LEARN MORE
             </button>
@@ -28,7 +25,7 @@ const Hero = () => {
         </div>
       </div>
       <img
-        src={MountainPng}
+        // src={MountainPng}
         alt=""
         className="absolute right-0 bottom-0 w-full brightness-50 z-10"
       />
